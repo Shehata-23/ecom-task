@@ -1,0 +1,28 @@
+.cartButton {
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .notInCart {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .notInCart:hover {
+    background-color: #0056b3;
+  }
+  
+  .inCart {
+    background-color: #e63946;
+    color: white;
+  }
+  
+  .inCart:hover {
+    background-color: #a02128;
+  }
+  

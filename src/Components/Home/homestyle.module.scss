@@ -1,0 +1,84 @@
+@import "../../Styles/mediaQuery";
+@import "../../Styles/breakPoints";
+@import "../../Styles/globalStyles";
+
+.container {
+  background-color: #d1d5db;
+  padding: 2rem;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 45px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+
+  &-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.75rem 0;
+
+    @include respond-to(md) {
+      width: 50%;
+    }
+
+    @include respond-to(xl) {
+      width: 25%;
+    }
+  }
+}
+
+// New logo styles
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+
+    @include respond-to(md) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  &-text {
+    display: none;
+
+    @include respond-to(md) {
+      display: inline;
+    }
+  }
+
+  @include respond-to(md) {
+    font-size: 1.75rem;
+  }
+
+  @include respond-to(xl) {
+    font-size: 2rem;
+  }
+}
+
+.loading,
+.error {
+  @include loading;
+}

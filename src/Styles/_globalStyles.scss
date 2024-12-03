@@ -1,0 +1,45 @@
+@mixin btnStyles(
+  $padding: 5px 10px,
+  $bg-color: #007bff,
+  $hover-color: #2980b9,
+  $active-color: #1e5f87,
+  $color: white,
+  $font-weight: 600
+) {
+  padding: $padding;
+  background-color: $bg-color;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 8px;
+  color: $color;
+  font-weight: $font-weight;
+
+  &:hover {
+    background-color: $hover-color;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    background-color: $active-color;
+    transform: translateY(0);
+  }
+}
+
+@mixin standardFlex() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blanchedalmond;
+}
+
+@mixin loading() {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #d97706;
+}

@@ -1,0 +1,52 @@
+@import "../../Styles/mediaQuery";
+@import "../../Styles/breakPoints";
+@import "../../Styles/globalStyles";
+
+.cart {
+    background-color: #f3f4f6; 
+    padding: 2rem; 
+    min-width: 100%;
+  
+    &-header {
+      font-size: 2rem; 
+      font-weight: 700; 
+      text-align: center;
+      margin-bottom: 1.5rem; 
+      color: #1f2937; 
+    }
+  
+    &-empty {
+      text-align: center;
+      color: #4b5563; 
+    }
+  
+    &-content {
+      max-width: 64rem; 
+      margin: 0 auto; 
+    }
+  
+    &-summary {
+      margin-top: 1.5rem;
+      background-color: #ffffff; 
+      padding: 1rem; 
+      border-radius: 0.5rem; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  
+      &-row {
+        display: flex;
+        justify-content: space-between;
+  
+        &-label {
+          font-size: 1.125rem; 
+          font-weight: 600; 
+          color: #1f2937; 
+        }
+  
+        &-total {
+          font-size: 1.5rem; 
+          font-weight: 700; 
+          color: #2563eb; 
+        }
+      }
+    }
+  }
