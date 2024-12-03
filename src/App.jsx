@@ -14,23 +14,28 @@ function App() {
     },
   });
 
-  const router = createBrowserRouter([
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <Layout />,
+        children: [
+          {
+            index: true,
+            element: <Home />,
+          },
+          {
+            path: "/cart",
+            element: <Cart />,
+          },
+          { path: "/details/:id", element: <ProductDetails /> },
+        ],
+      },
+    ],
     {
-      path: "/",
-      element: <Layout />,
-      children: [
-        {
-          index: true,
-          element: <Home />,
-        },
-        {
-          path: "/cart",
-          element: <Cart />,
-        },
-        { path: "/details/:id", element: <ProductDetails /> },
-      ],
-    },
-  ]);
+      basename: "/ecom-task", 
+    }
+  );
 
   return (
     <QueryClientProvider client={queryClient}>

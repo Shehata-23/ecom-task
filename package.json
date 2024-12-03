@@ -1,6 +1,5 @@
 {
-  "homepage": "https://Shehata-23.github.io/ecom-task"
-
+  "homepage": "https://Shehata-23.github.io/ecom-task",
   "name": "newproject",
   "private": true,
   "version": "0.0.0",
@@ -10,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.36.1",
